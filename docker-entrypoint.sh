@@ -19,10 +19,10 @@ if [ ! -f .ctfd_secret_key ] && [ -z "$SECRET_KEY" ]; then
 fi
 
 # Ensures that the database is available
-python ping.py
+python3 ping.py
 
 # Initialize database
-python manage.py db upgrade
+python3 manage.py db upgrade
 
 # Start CTFd
 echo "Starting CTFd"
